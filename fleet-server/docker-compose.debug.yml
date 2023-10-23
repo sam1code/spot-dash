@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  fleetserver:
+    image: fleetserver
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 3001:3001
